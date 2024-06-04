@@ -31,7 +31,7 @@ const Sidebar = ({ hideOnMobile }) => {
   return (
     <aside
       className={twMerge(
-        `absolute top-full hidden lg:block`,
+        `absolute top-full hidden lg:block overflow-auto`,
         hideOnMobile && 'block'
       )}
     >
@@ -59,7 +59,7 @@ const Sidebar = ({ hideOnMobile }) => {
 
           <div className='flex flex-col justify-between h-full'>
             <div className='pt-20 flex flex-col gap-4'>
-              <a
+              <button
                 className=' flex items-center py-2.5 px-4  rounded-lg gap-4
                hover:bg-primary-100'
               >
@@ -67,8 +67,8 @@ const Sidebar = ({ hideOnMobile }) => {
                 {sidebarOpened && (
                   <span className='cursor-pointer'>All bookmarks</span>
                 )}
-              </a>
-              <a
+              </button>
+              <button
                 className=' flex items-center py-2.5 px-4  rounded-lg gap-4
               hover:bg-primary-100
               '
@@ -77,8 +77,8 @@ const Sidebar = ({ hideOnMobile }) => {
                 {sidebarOpened && (
                   <span className='cursor-pointer'>Favorites</span>
                 )}
-              </a>
-              <a
+              </button>
+              <button
                 className='flex items-center bg-primary py-2.5 px-4 text-white
                   font-bold tracking-wider rounded-lg gap-4 '
               >
@@ -86,8 +86,8 @@ const Sidebar = ({ hideOnMobile }) => {
                 {sidebarOpened && (
                   <span className='cursor-pointer'>History</span>
                 )}
-              </a>
-              <a
+              </button>
+              <button
                 className=' flex items-center py-2.5 px-4  rounded-lg gap-4
                hover:bg-primary-100'
               >
@@ -95,15 +95,15 @@ const Sidebar = ({ hideOnMobile }) => {
                 {sidebarOpened && (
                   <span className='cursor-pointer'>Archive</span>
                 )}
-              </a>
-              <a
+              </button>
+              <button
                 className=' flex items-center py-2.5 px-4  rounded-lg gap-4
                hover:bg-primary-100'
               >
                 <TrashIcon className='h-7' />
                 {sidebarOpened && <span className='cursor-pointer'>Trash</span>}
-              </a>
-              <a
+              </button>
+              <button
                 className=' flex items-center py-2.5 px-4  rounded-lg gap-4
               hover:bg-primary-100
               '
@@ -112,10 +112,10 @@ const Sidebar = ({ hideOnMobile }) => {
                 {sidebarOpened && (
                   <span className='cursor-pointer'>Collections</span>
                 )}
-              </a>
+              </button>
             </div>
             <div className=' flex flex-col gap-4 border-t border-gray-100 pt-4'>
-              <a
+              <button
                 className=' flex items-center py-2.5 px-4  rounded-lg gap-4
                  hover:bg-primary-100'
               >
@@ -123,8 +123,8 @@ const Sidebar = ({ hideOnMobile }) => {
                 {sidebarOpened && (
                   <span className='cursor-pointer'>Settings</span>
                 )}
-              </a>
-              <a
+              </button>
+              <button
                 className=' flex items-center py-2.5 px-4  rounded-lg gap-4
                 hover:bg-primary-100
               '
@@ -133,7 +133,7 @@ const Sidebar = ({ hideOnMobile }) => {
                 {sidebarOpened && (
                   <span className='cursor-pointer'>Logout</span>
                 )}
-              </a>
+              </button>
             </div>
           </div>
         </div>

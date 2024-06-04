@@ -56,7 +56,7 @@ const GridCard = () => {
         {/* image */}
         <div className='h-40 rounded-lg overflow-hidden mt-4'>
           <img
-            src='/public/placeholder.webp'
+            src='/placeholder.webp'
             alt='bookmark image'
             className='max-h-full w-full object-cover'
           />

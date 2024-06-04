@@ -12,7 +12,7 @@ const GraphIntro = () => {
         <p className=' md:hidden'>Filter faster with AI</p>
       </div>
       <button
-        className='bg-secondary h-full rounded-full shrink-0
+        className='bg-secondary hover:bg-opacity-80 h-full rounded-full shrink-0
        border-dark shadow-sm border px-4 md:px-8 md:text-lg font-medium'
       >
         Open Graph

@@ -5,5 +5,10 @@ export const useAppContext = () => {
   const { filtersOpened, setFiltersOpened, sidebarOpened, setSidebarOpened } =
     useContext(Context);
 
-  return { filtersOpened, setFiltersOpened, sidebarOpened, setSidebarOpened };
+  return {
+    filtersOpened,
+    setFiltersOpened,
+    sidebarOpened,
+    setSidebarOpened,
+  };
 };

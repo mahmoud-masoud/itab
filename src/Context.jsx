@@ -9,13 +9,13 @@ export const Context = createContext({
 const ContextProvider = ({ children }) => {
   const [filtersOpened, setFiltersOpened] = useState(false);
   const [sidebarOpened, setSidebarOpened] = useState(true);
-
   return (
     <Context.Provider
       value={{
         filtersOpened,
-        setFiltersOpened,
         sidebarOpened,
+
+        setFiltersOpened,
         setSidebarOpened,
       }}
     >

@@ -10,7 +10,7 @@ export default {
         'primary-100': '#E0E7FF',
         'primary-50': '#EEF2FF',
         hover: '#6366F1',
-        secondary: '#E5F33E',
+        secondary: '#DFFF00',
         dark: '#1E1B4B',
         'text-color': '#1E169D',
         gray: '#C6C6CA',
